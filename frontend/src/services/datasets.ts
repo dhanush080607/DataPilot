@@ -3,11 +3,26 @@ import type { DatasetResponse } from "../types/dataset";
 
 const API_URL = "http://127.0.0.1:8000/api/v1";
 
+export interface DatasetPreviewResponse {
+  dataset_id: string;
+  rows: Record<string, unknown>[];
+}
+
 export const getDatasetProfile = async (
   datasetId: string
 ): Promise<DatasetResponse> => {
   const response = await axios.get<DatasetResponse>(
     `${API_URL}/datasets/${datasetId}/profile`
+  );
+
+  return response.data;
+};
+
+export const getDatasetPreview = async (
+  datasetId: string
+): Promise<DatasetPreviewResponse> => {
+  const response = await axios.get<DatasetPreviewResponse>(
+    `${API_URL}/datasets/${datasetId}/preview`
   );
 
   return response.data;
