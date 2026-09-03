@@ -7,6 +7,10 @@ from app.services.data_engine.profiler import (
     get_dataset_preview
 )
 
+from app.services.analytics_engine.statistics import (
+    calculate_statistics
+)
+
 
 router = APIRouter()
 
@@ -81,4 +85,39 @@ def get_dataset_preview_api(dataset_id: str):
         raise HTTPException(
             status_code=500,
             detail=f"Failed to load dataset preview: {str(error)}"
+        )
+
+
+@router.get("/{dataset_id}/statistics")
+def get_dataset_statistics(dataset_id: str):
+    """
+    Get statistical information for numeric columns.
+    """
+
+    matching_files = list(
+        UPLOAD_DIR.glob(f"{dataset_id}.*")
+    )
+
+    if not matching_files:
+        raise HTTPException(
+            status_code=404,
+            detail="Dataset not found"
+        )
+
+    file_path = matching_files[0]
+
+    try:
+        statistics = calculate_statistics(
+            str(file_path)
+        )
+
+        return {
+            "dataset_id": dataset_id,
+            "statistics": statistics
+        }
+
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to calculate statistics: {str(error)}"
         )
