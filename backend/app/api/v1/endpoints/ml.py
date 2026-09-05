@@ -18,7 +18,10 @@ from app.services.ml_engine.evaluator import (
     find_best_model,
 )
 
-from app.services.ml_engine.predictor import make_prediction
+from app.services.ml_engine.predictor import (
+    make_prediction,
+    save_model,
+)
 
 
 router = APIRouter()
@@ -72,6 +75,12 @@ def train_dataset_model(
             model_name,
         )
 
+        model_path = save_model(
+            model,
+            dataset_id,
+            model_name,
+        )
+
         evaluation = evaluate_model(
             model,
             X_test,
@@ -82,6 +91,7 @@ def train_dataset_model(
             "dataset_id": dataset_id,
             "model": model_name,
             "target_column": target_column,
+            "model_file": model_path.name,
             "preparation": summary,
             "evaluation": evaluation,
         }
