@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import AnalyticsDashboard from "../components/analytics/AnalyticsDashboard";
 import ColumnSelector from "../components/analytics/ColumnSelector";
 import DatasetOverview from "../components/analytics/DatasetOverview";
+import ChartTypeSelector from "../components/analytics/ChartTypeSelector";
 
 import {
   getStatistics,
@@ -38,19 +39,30 @@ export default function Analytics() {
   const [visualization, setVisualization] =
     useState<VisualizationData | null>(null);
 
-  const [selectedColumn, setSelectedColumn] = useState("");
+  const [selectedColumn, setSelectedColumn] =
+    useState("");
 
-  const [loading, setLoading] = useState(true);
-  const [chartLoading, setChartLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [chartType, setChartType] =
+    useState<"histogram" | "bar">("histogram");
+
+  const [loading, setLoading] =
+    useState(true);
+
+  const [chartLoading, setChartLoading] =
+    useState(false);
+
+  const [error, setError] =
+    useState("");
 
   useEffect(() => {
-    const datasetId = localStorage.getItem("dataset_id");
+    const datasetId =
+      localStorage.getItem("dataset_id");
 
     if (!datasetId) {
       setError(
         "No dataset found. Please upload a dataset first."
       );
+
       setLoading(false);
       return;
     }
@@ -72,7 +84,9 @@ export default function Analytics() {
           getAnomalies(datasetId),
         ]);
 
-        setStatistics(statisticsResponse.statistics);
+        setStatistics(
+          statisticsResponse.statistics
+        );
 
         setCorrelation(
           correlationResponse.correlation
@@ -86,7 +100,8 @@ export default function Analytics() {
           statisticsResponse.statistics.numeric_columns;
 
         if (numericColumns.length > 0) {
-          const firstColumn = numericColumns[0];
+          const firstColumn =
+            numericColumns[0];
 
           setSelectedColumn(firstColumn);
 
@@ -100,10 +115,21 @@ export default function Analytics() {
           setVisualization(
             visualizationResponse.visualization
           );
+
+          if (
+            visualizationResponse.visualization.chart_type ===
+            "histogram"
+          ) {
+            setChartType("histogram");
+          } else {
+            setChartType("bar");
+          }
         }
       } catch (err) {
         console.error(err);
-        setError("Failed to load analytics.");
+        setError(
+          "Failed to load analytics."
+        );
       } finally {
         setLoading(false);
       }
@@ -130,7 +156,38 @@ export default function Analytics() {
         await getVisualization(
           datasetId,
           column,
-          "auto"
+          chartType
+        );
+
+      setVisualization(
+        response.visualization
+      );
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setChartLoading(false);
+    }
+  };
+
+  const handleChartTypeChange = async (
+    type: "histogram" | "bar"
+  ) => {
+    const datasetId =
+      localStorage.getItem("dataset_id");
+
+    if (!datasetId || !selectedColumn) {
+      return;
+    }
+
+    setChartType(type);
+    setChartLoading(true);
+
+    try {
+      const response =
+        await getVisualization(
+          datasetId,
+          selectedColumn,
+          type
         );
 
       setVisualization(
@@ -198,6 +255,12 @@ export default function Analytics() {
         columns={statistics.numeric_columns}
         selectedColumn={selectedColumn}
         onChange={handleColumnChange}
+      />
+
+      {/* Chart Type Selector */}
+      <ChartTypeSelector
+        chartType={chartType}
+        onChange={handleChartTypeChange}
       />
 
       {/* Chart Loading */}
