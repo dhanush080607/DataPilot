@@ -125,3 +125,26 @@ def prepare_ml_data(
         y_test,
         summary,
     )
+def prepare_prediction_features(
+    features: dict,
+    training_columns: list[str],
+) -> pd.DataFrame:
+    """
+    Convert raw prediction features into the same
+    one-hot encoded structure used during training.
+    """
+
+    df = pd.DataFrame([features])
+
+    df = pd.get_dummies(
+        df,
+        drop_first=False,
+        dtype=int,
+    )
+
+    df = df.reindex(
+        columns=training_columns,
+        fill_value=0,
+    )
+
+    return df

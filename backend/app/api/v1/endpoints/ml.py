@@ -4,7 +4,10 @@ from app.utils.file_utils import get_processed_file
 
 from app.services.data_engine.profiler import load_dataset
 
-from app.services.ml_engine.preprocessing import prepare_ml_data
+from app.services.ml_engine.preprocessing import (
+    prepare_ml_data,
+    prepare_prediction_features,
+)
 
 from app.services.ml_engine.trainer import (
     train_model,
@@ -20,9 +23,11 @@ from app.services.ml_engine.evaluator import (
 
 from app.services.ml_engine.predictor import (
     make_prediction,
+    load_saved_model,
+    get_prediction_probabilities,
     save_model,
 )
-
+from app.schemas.ml import PredictionRequest
 
 router = APIRouter()
 
@@ -175,4 +180,80 @@ def compare_models(
         raise HTTPException(
             status_code=500,
             detail=f"Model comparison failed: {str(error)}",
+        )
+
+@router.post("/{dataset_id}/predict")
+def predict_dataset(
+    dataset_id: str,
+    request: PredictionRequest,
+):
+    """
+    Make a prediction using a previously trained model.
+    """
+
+    file_path = get_processed_file(dataset_id)
+
+    if file_path is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Processed dataset not found. Process the dataset first.",
+        )
+
+    try:
+        model = load_saved_model(
+            dataset_id,
+            request.model_name,
+        )
+
+        training_df = load_dataset(
+            str(file_path)
+        )
+
+        training_columns = [
+            column
+            for column in training_df.columns
+            if column not in [
+                "Loan_Status_N",
+                "Loan_Status_Y",
+            ]
+        ]
+
+        features = prepare_prediction_features(
+            request.features,
+            training_columns,
+        )
+
+        prediction = make_prediction(
+            model,
+            features,
+        )
+
+        probabilities = get_prediction_probabilities(
+            model,
+            features,
+        )
+
+        return {
+            "dataset_id": dataset_id,
+            "model": request.model_name,
+            "prediction": prediction,
+            "probabilities": probabilities,
+        }
+
+    except FileNotFoundError as error:
+        raise HTTPException(
+            status_code=404,
+            detail=str(error),
+        )
+
+    except ValueError as error:
+        raise HTTPException(
+            status_code=400,
+            detail=str(error),
+        )
+
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Prediction failed: {str(error)}",
         )
