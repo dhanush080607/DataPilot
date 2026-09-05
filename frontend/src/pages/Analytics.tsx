@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
 import AnalyticsDashboard from "../components/analytics/AnalyticsDashboard";
-import ColumnSelector from "../components/analytics/ColumnSelector";
 import DatasetOverview from "../components/analytics/DatasetOverview";
-import ChartTypeSelector from "../components/analytics/ChartTypeSelector";
+import VisualizationPanel from "../components/analytics/VisualizationPanel";
 
 import {
   getStatistics,
@@ -84,20 +83,19 @@ export default function Analytics() {
           getAnomalies(datasetId),
         ]);
 
-        setStatistics(
-          statisticsResponse.statistics
-        );
+        const statisticsData =
+          statisticsResponse.statistics;
 
+        setStatistics(statisticsData);
         setCorrelation(
           correlationResponse.correlation
         );
-
         setAnomalies(
           anomaliesResponse.anomalies
         );
 
         const numericColumns =
-          statisticsResponse.statistics.numeric_columns;
+          statisticsData.numeric_columns;
 
         if (numericColumns.length > 0) {
           const firstColumn =
@@ -112,21 +110,18 @@ export default function Analytics() {
               "auto"
             );
 
-          setVisualization(
-            visualizationResponse.visualization
-          );
+          const visualizationData =
+            visualizationResponse.visualization;
 
-          if (
-            visualizationResponse.visualization.chart_type ===
-            "histogram"
-          ) {
-            setChartType("histogram");
-          } else {
-            setChartType("bar");
-          }
+          setVisualization(visualizationData);
+
+          setChartType(
+            visualizationData.chart_type
+          );
         }
       } catch (err) {
         console.error(err);
+
         setError(
           "Failed to load analytics."
         );
@@ -233,6 +228,7 @@ export default function Analytics() {
 
   return (
     <div className="space-y-6 p-6">
+
       {/* Page Header */}
       <div>
         <h1 className="text-2xl font-bold text-white">
@@ -250,33 +246,25 @@ export default function Analytics() {
         profile={profile}
       />
 
-      {/* Column Selector */}
-      <ColumnSelector
-        columns={statistics.numeric_columns}
-        selectedColumn={selectedColumn}
-        onChange={handleColumnChange}
-      />
-
-      {/* Chart Type Selector */}
-      <ChartTypeSelector
-        chartType={chartType}
-        onChange={handleChartTypeChange}
-      />
-
-      {/* Chart Loading */}
-      {chartLoading && (
-        <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-gray-400">
-          Updating chart...
-        </div>
-      )}
-
-      {/* Analytics Dashboard */}
+      {/* Statistics, Correlation, Outliers */}
       <AnalyticsDashboard
         statistics={statistics}
         correlation={correlation}
         anomalies={anomalies}
-        visualization={visualization}
+        visualization={null}
       />
+
+      {/* Visualization */}
+      <VisualizationPanel
+        columns={statistics.numeric_columns}
+        selectedColumn={selectedColumn}
+        chartType={chartType}
+        visualization={visualization}
+        chartLoading={chartLoading}
+        onColumnChange={handleColumnChange}
+        onChartTypeChange={handleChartTypeChange}
+      />
+
     </div>
   );
 }
