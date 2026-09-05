@@ -2,10 +2,6 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-from app.services.analytics_engine.correlation import (
-    calculate_correlation
-)
-
 from app.services.data_engine.profiler import (
     profile_dataset,
     get_dataset_preview
@@ -15,8 +11,16 @@ from app.services.analytics_engine.statistics import (
     calculate_statistics
 )
 
+from app.services.analytics_engine.correlation import (
+    calculate_correlation
+)
+
 from app.services.analytics_engine.anomaly import (
     detect_anomalies
+)
+
+from app.services.analytics_engine.visualization import (
+    prepare_visualization_data
 )
 
 
@@ -129,6 +133,8 @@ def get_dataset_statistics(dataset_id: str):
             status_code=500,
             detail=f"Failed to calculate statistics: {str(error)}"
         )
+
+
 @router.get("/{dataset_id}/correlation")
 def get_dataset_correlation(dataset_id: str):
     """
@@ -162,6 +168,8 @@ def get_dataset_correlation(dataset_id: str):
             status_code=500,
             detail=f"Failed to calculate correlation: {str(error)}"
         )
+
+
 @router.get("/{dataset_id}/anomalies")
 def get_dataset_anomalies(dataset_id: str):
     """
@@ -194,4 +202,56 @@ def get_dataset_anomalies(dataset_id: str):
         raise HTTPException(
             status_code=500,
             detail=f"Failed to detect anomalies: {str(error)}"
+        )
+
+
+@router.get("/{dataset_id}/visualization")
+def get_dataset_visualization(
+    dataset_id: str,
+    column: str,
+    chart_type: str = "auto",
+    limit: int = 20
+):
+    """
+    Prepare chart-ready data for a dataset column.
+    """
+
+    matching_files = list(
+        UPLOAD_DIR.glob(f"{dataset_id}.*")
+    )
+
+    if not matching_files:
+        raise HTTPException(
+            status_code=404,
+            detail="Dataset not found"
+        )
+
+    file_path = matching_files[0]
+
+    try:
+        visualization = prepare_visualization_data(
+            str(file_path),
+            column,
+            chart_type,
+            limit
+        )
+
+        return {
+            "dataset_id": dataset_id,
+            "visualization": visualization
+        }
+
+    except ValueError as error:
+        raise HTTPException(
+            status_code=400,
+            detail=str(error)
+        )
+
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail=(
+                "Failed to prepare visualization data: "
+                f"{str(error)}"
+            )
         )
