@@ -50,3 +50,19 @@ export const compareModels = async (
 
   return response.data;
 };
+
+export const predict = async (
+  datasetId: string,
+  modelName: string,
+  features: Record<string, unknown>
+) => {
+  const response = await axios.post(
+    `${API_URL}/ml/${datasetId}/predict`,
+    {
+      model_name: modelName,
+      features,
+    }
+  );
+
+  return response.data;
+};

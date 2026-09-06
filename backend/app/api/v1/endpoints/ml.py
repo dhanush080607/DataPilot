@@ -27,20 +27,31 @@ from app.services.ml_engine.predictor import (
     get_prediction_probabilities,
     save_model,
 )
+
 from app.schemas.ml import PredictionRequest
+
 
 router = APIRouter()
 
+
+# ============================================================
+# GET AVAILABLE MODELS
+# ============================================================
 
 @router.get("/models")
 def available_models():
     """
     Return the ML models supported by DataPilot.
     """
+
     return {
         "models": get_available_models()
     }
 
+
+# ============================================================
+# TRAIN MODEL
+# ============================================================
 
 @router.post("/{dataset_id}/train")
 def train_dataset_model(
@@ -61,7 +72,16 @@ def train_dataset_model(
         )
 
     try:
+
+        # ----------------------------------------------------
+        # Load dataset
+        # ----------------------------------------------------
+
         df = load_dataset(str(file_path))
+
+        # ----------------------------------------------------
+        # Prepare ML data
+        # ----------------------------------------------------
 
         (
             X_train,
@@ -74,11 +94,19 @@ def train_dataset_model(
             target_column,
         )
 
+        # ----------------------------------------------------
+        # Train model
+        # ----------------------------------------------------
+
         model = train_model(
             X_train,
             y_train,
             model_name,
         )
+
+        # ----------------------------------------------------
+        # Save model
+        # ----------------------------------------------------
 
         model_path = save_model(
             model,
@@ -86,11 +114,19 @@ def train_dataset_model(
             model_name,
         )
 
+        # ----------------------------------------------------
+        # Evaluate model
+        # ----------------------------------------------------
+
         evaluation = evaluate_model(
             model,
             X_test,
             y_test,
         )
+
+        # ----------------------------------------------------
+        # Response
+        # ----------------------------------------------------
 
         return {
             "dataset_id": dataset_id,
@@ -102,17 +138,23 @@ def train_dataset_model(
         }
 
     except ValueError as error:
+
         raise HTTPException(
             status_code=400,
             detail=str(error),
         )
 
     except Exception as error:
+
         raise HTTPException(
             status_code=500,
             detail=f"Model training failed: {str(error)}",
         )
 
+
+# ============================================================
+# COMPARE MODELS
+# ============================================================
 
 @router.post("/{dataset_id}/compare")
 def compare_models(
@@ -133,7 +175,16 @@ def compare_models(
         )
 
     try:
+
+        # ----------------------------------------------------
+        # Load dataset
+        # ----------------------------------------------------
+
         df = load_dataset(str(file_path))
+
+        # ----------------------------------------------------
+        # Prepare ML data
+        # ----------------------------------------------------
 
         (
             X_train,
@@ -146,10 +197,18 @@ def compare_models(
             target_column,
         )
 
+        # ----------------------------------------------------
+        # Train all models
+        # ----------------------------------------------------
+
         trained_models = train_multiple_models(
             X_train,
             y_train,
         )
+
+        # ----------------------------------------------------
+        # Evaluate all models
+        # ----------------------------------------------------
 
         evaluation_results = evaluate_multiple_models(
             trained_models,
@@ -157,9 +216,17 @@ def compare_models(
             y_test,
         )
 
+        # ----------------------------------------------------
+        # Find best model
+        # ----------------------------------------------------
+
         best_model = find_best_model(
             evaluation_results
         )
+
+        # ----------------------------------------------------
+        # Response
+        # ----------------------------------------------------
 
         return {
             "dataset_id": dataset_id,
@@ -171,16 +238,23 @@ def compare_models(
         }
 
     except ValueError as error:
+
         raise HTTPException(
             status_code=400,
             detail=str(error),
         )
 
     except Exception as error:
+
         raise HTTPException(
             status_code=500,
             detail=f"Model comparison failed: {str(error)}",
         )
+
+
+# ============================================================
+# PREDICT
+# ============================================================
 
 @router.post("/{dataset_id}/predict")
 def predict_dataset(
@@ -200,38 +274,78 @@ def predict_dataset(
         )
 
     try:
-        model = load_saved_model(
-            dataset_id,
-            request.model_name,
-        )
+
+        # ----------------------------------------------------
+        # Load the processed dataset
+        # ----------------------------------------------------
 
         training_df = load_dataset(
             str(file_path)
         )
 
-        training_columns = [
-            column
-            for column in training_df.columns
-            if column not in [
-                "Loan_Status_N",
-                "Loan_Status_Y",
-            ]
-        ]
+        # ----------------------------------------------------
+        # Recreate the exact feature columns used during
+        # ML training.
+        #
+        # IMPORTANT:
+        # Loan_Status is the target.
+        # Therefore Loan_Status_N and Loan_Status_Y
+        # must NOT be prediction features.
+        # ----------------------------------------------------
+
+        (
+            _,
+            _,
+            _,
+            _,
+            preparation,
+        ) = prepare_ml_data(
+            training_df,
+            "Loan_Status",
+        )
+
+        training_columns = preparation["feature_columns"]
+
+        # ----------------------------------------------------
+        # Load trained model
+        # ----------------------------------------------------
+
+        model = load_saved_model(
+            dataset_id,
+            request.model_name,
+        )
+
+        # ----------------------------------------------------
+        # Prepare prediction input using the same feature
+        # structure as training.
+        # ----------------------------------------------------
 
         features = prepare_prediction_features(
             request.features,
             training_columns,
         )
 
+        # ----------------------------------------------------
+        # Make prediction
+        # ----------------------------------------------------
+
         prediction = make_prediction(
             model,
             features,
         )
 
+        # ----------------------------------------------------
+        # Prediction probabilities
+        # ----------------------------------------------------
+
         probabilities = get_prediction_probabilities(
             model,
             features,
         )
+
+        # ----------------------------------------------------
+        # Response
+        # ----------------------------------------------------
 
         return {
             "dataset_id": dataset_id,
@@ -241,18 +355,21 @@ def predict_dataset(
         }
 
     except FileNotFoundError as error:
+
         raise HTTPException(
             status_code=404,
             detail=str(error),
         )
 
     except ValueError as error:
+
         raise HTTPException(
             status_code=400,
             detail=str(error),
         )
 
     except Exception as error:
+
         raise HTTPException(
             status_code=500,
             detail=f"Prediction failed: {str(error)}",
