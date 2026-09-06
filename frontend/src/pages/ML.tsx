@@ -501,52 +501,254 @@ function PredictionForm({
   onPredict,
   loading,
 }: PredictionFormProps) {
-  const [features, setFeatures] = useState("{}");
-  const [parseError, setParseError] = useState("");
+  const [form, setForm] = useState({
+    Gender: "Male",
+    Married: "Yes",
+    Dependents: "0",
+    Education: "Graduate",
+    Self_Employed: "No",
+    ApplicantIncome: "5000",
+    CoapplicantIncome: "1500",
+    LoanAmount: "150",
+    Loan_Amount_Term: "360",
+    Credit_History: "1",
+    Property_Area: "Urban",
+  });
+
+  const handleChange = (
+    field: string,
+    value: string
+  ) => {
+    setForm((previous) => ({
+      ...previous,
+      [field]: value,
+    }));
+  };
 
   const handleSubmit = () => {
-    try {
-      const parsed = JSON.parse(features);
+    const features = {
+      Gender: form.Gender,
+      Married: form.Married,
+      Dependents: form.Dependents,
+      Education: form.Education,
+      Self_Employed: form.Self_Employed,
+      ApplicantIncome: Number(form.ApplicantIncome),
+      CoapplicantIncome: Number(form.CoapplicantIncome),
+      LoanAmount: Number(form.LoanAmount),
+      Loan_Amount_Term: Number(form.Loan_Amount_Term),
+      Credit_History: Number(form.Credit_History),
+      Property_Area: form.Property_Area,
+    };
 
-      if (!parsed || Array.isArray(parsed) || typeof parsed !== "object") {
-        throw new Error("Features must be a JSON object.");
-      }
-
-      setParseError("");
-      onPredict(parsed as Record<string, unknown>);
-    } catch {
-      setParseError("Enter valid feature data as a JSON object.");
-    }
+    onPredict(features);
   };
 
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-      <h2 className="text-xl font-semibold text-white">Make a Prediction</h2>
 
-      <label className="mt-5 block text-sm text-gray-400">
-        Features (JSON)
-      </label>
+      <h2 className="text-xl font-semibold text-white">
+        Make a Prediction
+      </h2>
 
-      <textarea
-        value={features}
-        onChange={(event) => setFeatures(event.target.value)}
-        className="mt-2 min-h-32 w-full rounded-lg border border-white/10 bg-[#111111] px-4 py-3 font-mono text-sm text-white outline-none focus:border-cyan-400"
-        placeholder='{"feature": "value"}'
-        aria-label="Prediction features"
-      />
+      <p className="mt-2 text-sm text-gray-400">
+        Enter applicant details to predict the loan approval status.
+      </p>
 
-      {parseError && (
-        <p className="mt-2 text-sm text-red-300">{parseError}</p>
-      )}
+      <div className="mt-6 grid gap-5 md:grid-cols-2">
+
+        {/* Gender */}
+        <FormSelect
+          label="Gender"
+          value={form.Gender}
+          onChange={(value) =>
+            handleChange("Gender", value)
+          }
+          options={["Male", "Female"]}
+        />
+
+        {/* Married */}
+        <FormSelect
+          label="Married"
+          value={form.Married}
+          onChange={(value) =>
+            handleChange("Married", value)
+          }
+          options={["Yes", "No"]}
+        />
+
+        {/* Dependents */}
+        <FormSelect
+          label="Dependents"
+          value={form.Dependents}
+          onChange={(value) =>
+            handleChange("Dependents", value)
+          }
+          options={["0", "1", "2", "3+"]}
+        />
+
+        {/* Education */}
+        <FormSelect
+          label="Education"
+          value={form.Education}
+          onChange={(value) =>
+            handleChange("Education", value)
+          }
+          options={["Graduate", "Not Graduate"]}
+        />
+
+        {/* Self Employed */}
+        <FormSelect
+          label="Self Employed"
+          value={form.Self_Employed}
+          onChange={(value) =>
+            handleChange("Self_Employed", value)
+          }
+          options={["No", "Yes"]}
+        />
+
+        {/* Property Area */}
+        <FormSelect
+          label="Property Area"
+          value={form.Property_Area}
+          onChange={(value) =>
+            handleChange("Property_Area", value)
+          }
+          options={["Urban", "Semiurban", "Rural"]}
+        />
+
+        {/* Applicant Income */}
+        <FormInput
+          label="Applicant Income"
+          type="number"
+          value={form.ApplicantIncome}
+          onChange={(value) =>
+            handleChange("ApplicantIncome", value)
+          }
+        />
+
+        {/* Coapplicant Income */}
+        <FormInput
+          label="Coapplicant Income"
+          type="number"
+          value={form.CoapplicantIncome}
+          onChange={(value) =>
+            handleChange("CoapplicantIncome", value)
+          }
+        />
+
+        {/* Loan Amount */}
+        <FormInput
+          label="Loan Amount"
+          type="number"
+          value={form.LoanAmount}
+          onChange={(value) =>
+            handleChange("LoanAmount", value)
+          }
+        />
+
+        {/* Loan Term */}
+        <FormInput
+          label="Loan Amount Term"
+          type="number"
+          value={form.Loan_Amount_Term}
+          onChange={(value) =>
+            handleChange("Loan_Amount_Term", value)
+          }
+        />
+
+        {/* Credit History */}
+        <FormSelect
+          label="Credit History"
+          value={form.Credit_History}
+          onChange={(value) =>
+            handleChange("Credit_History", value)
+          }
+          options={["1", "0"]}
+        />
+
+      </div>
 
       <button
         type="button"
         onClick={handleSubmit}
         disabled={loading}
-        className="mt-4 rounded-lg bg-cyan-400 px-5 py-3 font-medium text-black transition hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-50"
+        className="mt-6 rounded-lg bg-cyan-400 px-6 py-3 font-medium text-black transition hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-50"
       >
-        {loading ? "Predicting..." : "Predict"}
+        {loading ? "Predicting..." : "Predict Loan Status"}
       </button>
+
+    </div>
+  );
+}
+
+
+interface FormInputProps {
+  label: string;
+  type: string;
+  value: string;
+  onChange: (value: string) => void;
+}
+
+function FormInput({
+  label,
+  type,
+  value,
+  onChange,
+}: FormInputProps) {
+  return (
+    <div>
+      <label className="mb-2 block text-sm text-gray-400">
+        {label}
+      </label>
+
+      <input
+        type={type}
+        value={value}
+        onChange={(event) =>
+          onChange(event.target.value)
+        }
+        className="w-full rounded-lg border border-white/10 bg-[#111111] px-4 py-3 text-white outline-none focus:border-cyan-400"
+      />
+    </div>
+  );
+}
+
+
+interface FormSelectProps {
+  label: string;
+  value: string;
+  options: string[];
+  onChange: (value: string) => void;
+}
+
+function FormSelect({
+  label,
+  value,
+  options,
+  onChange,
+}: FormSelectProps) {
+  return (
+    <div>
+      <label className="mb-2 block text-sm text-gray-400">
+        {label}
+      </label>
+
+      <select
+        value={value}
+        onChange={(event) =>
+          onChange(event.target.value)
+        }
+        className="w-full rounded-lg border border-white/10 bg-[#111111] px-4 py-3 text-white outline-none focus:border-cyan-400"
+      >
+        {options.map((option) => (
+          <option
+            key={option}
+            value={option}
+          >
+            {option}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }

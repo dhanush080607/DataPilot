@@ -26,5 +26,5 @@ router.include_router(
 router.include_router(
     ml.router,
     prefix="/ml",
-    tags=["Machine Learning"]
+    tags=["ML"]
 )
