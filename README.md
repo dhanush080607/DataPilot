@@ -1,424 +1,513 @@
-# ⚡ DataPilot
+<!-- ========================================================= -->
+
+<!--                       HERO SECTION                        -->
+
+<!-- ========================================================= -->
 
 <p align="center">
-  <strong>Turn raw data into decisions.</strong>
-</p>
-
-<p align="center">
-  <em>An AI-powered data analytics and machine learning workspace that lets you upload a dataset, explore it visually, ask questions in natural language, build models, and generate actionable insights.</em>
-</p>
-
-<p align="center">
-
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)](https://www.postgresql.org/)
-
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,50:0A1A2F,100:00D9FF&text=DATAPILOT&fontSize=62&fontColor=FFFFFF&fontAlignY=40&desc=AI-Powered%20Data%20Intelligence%20Platform&descAlignY=62&descSize=20&animation=fadeIn"
+    width="100%"
+  />
 </p>
 
 <p align="center">
 
-[![GitHub](https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/dhanush080607/DataPilot)
-[![License](https://img.shields.io/badge/License-See%20Repository-lightgrey?style=for-the-badge)](LICENSE)
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=850&lines=Turn+Raw+Data+Into+Real+Insights.;Explore+Your+Data+With+AI.;Ask+Questions+In+Natural+Language.;Analyze.+Visualize.+Understand.;Your+AI+Copilot+For+Data." />
+
+</p>
+
+<p align="center">
+
+<a href="https://github.com/dhanush080607/DataPilot">
+<img src="https://img.shields.io/badge/🚀_EXPLORE_REPOSITORY-00D9FF?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://github.com/dhanush080607/DataPilot/stargazers">
+<img src="https://img.shields.io/github/stars/dhanush080607/DataPilot?style=for-the-badge&logo=github&label=STARS&color=111827"/>
+</a>
+
+<a href="https://github.com/dhanush080607/DataPilot/network/members">
+<img src="https://img.shields.io/github/forks/dhanush080607/DataPilot?style=for-the-badge&logo=github&label=FORKS&color=111827"/>
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/AI-Gemini%20%7C%20OpenAI%20%7C%20Ollama-8A2BE2?style=flat-square"/>
+
+</p>
+
+<br/>
+
+<p align="center">
+  <strong>DataPilot is an AI-powered data analytics and machine learning workspace built to transform datasets into understandable, actionable intelligence.</strong>
+</p>
+
+---
+
+# ⚡ DATA → INTELLIGENCE
+
+<p align="center">
+
+```text
+╭──────────────────────────────────────────────────────────╮
+│                                                          │
+│                       YOUR DATA                          │
+│                                                          │
+╰───────────────────────────┬──────────────────────────────╯
+                            │
+                            ▼
+                  ┌───────────────────┐
+                  │   DATA PROFILING   │
+                  │  Structure • QA   │
+                  └─────────┬─────────┘
+                            │
+             ┌──────────────┼──────────────┐
+             ▼              ▼              ▼
+        📊 ANALYTICS    🤖 MACHINE      🧠 AI
+                         LEARNING       INSIGHTS
+             │              │              │
+             └──────────────┼──────────────┘
+                            ▼
+                  ┌───────────────────┐
+                  │     DATAPILOT     │
+                  │  INTELLIGENCE     │
+                  └─────────┬─────────┘
+                            │
+                            ▼
+                  ┌───────────────────┐
+                  │    DECISIONS      │
+                  └───────────────────┘
+```
 
 </p>
 
 ---
 
-## 🧭 The Idea
+# 🧠 WHAT IS DATAPILOT?
 
-Data analysis usually looks like this:
+**DataPilot** is built around one simple idea:
+
+> ### Data analysis shouldn't stop at charts.
+
+A dataset contains patterns, relationships, anomalies and signals.
+
+The problem is that discovering those signals traditionally requires moving between:
+
+```text
+Jupyter
+   +
+Python
+   +
+Pandas
+   +
+Visualization tools
+   +
+Machine Learning
+   +
+AI assistants
+```
+
+DataPilot brings these pieces together into one intelligent workflow.
+
+```text
+UPLOAD
+   ↓
+PROFILE
+   ↓
+EXPLORE
+   ↓
+ASK
+   ↓
+ANALYZE
+   ↓
+MODEL
+   ↓
+UNDERSTAND
+   ↓
+ACT
+```
+
+---
+
+# 🔥 WHY DATAPILOT?
+
+### Traditional Data Analysis
 
 ```text
 Dataset
    ↓
-Open Notebook
+Write Python
    ↓
 Clean Data
    ↓
-Explore Columns
+Write More Python
    ↓
 Create Charts
    ↓
-Write Python
+Analyze
    ↓
-Build ML Models
-   ↓
-Interpret Results
+Interpret
    ↓
 Write Report
 ```
 
-That's powerful — but it's also repetitive.
-
-**DataPilot is designed to bring these steps into one intelligent workspace.**
-
-```text
-                     ┌─────────────────────┐
-                     │      YOUR DATA      │
-                     │   CSV / Dataset     │
-                     └──────────┬──────────┘
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │    DATA PROFILER    │
-                     │ Structure • Stats   │
-                     │ Quality • Columns   │
-                     └──────────┬──────────┘
-                                │
-              ┌─────────────────┼─────────────────┐
-              ▼                 ▼                 ▼
-        📊 Analytics       🤖 ML Engine      🧠 AI Engine
-              │                 │                 │
-              └─────────────────┼─────────────────┘
-                                ▼
-                     ┌─────────────────────┐
-                     │     DATA PILOT      │
-                     │  Insights & Answers │
-                     └──────────┬──────────┘
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │     DECISIONS       │
-                     │ Reports • Actions   │
-                     └─────────────────────┘
-```
-
----
-
-# ✨ What is DataPilot?
-
-**DataPilot** is an AI-powered data analytics and machine learning platform built to make data exploration more accessible, interactive, and intelligent.
-
-Instead of switching between notebooks, visualization tools, ML scripts, and AI assistants, DataPilot brings the workflow into a single application.
-
-Upload your dataset.
-
-Explore it.
-
-Ask questions.
-
-Analyze patterns.
-
-Build machine-learning workflows.
-
-Generate AI-powered insights.
-
-And turn the results into something you can actually understand.
-
----
-
-# 🎯 The Problem
-
-Working with a new dataset often requires a lot of repetitive work.
-
-### Traditional workflow
-
-```text
-📁 Find dataset
-      ↓
-🐍 Open Python / Jupyter
-      ↓
-🔍 Inspect dataset
-      ↓
-🧹 Clean data
-      ↓
-📊 Create visualizations
-      ↓
-📈 Perform statistical analysis
-      ↓
-🤖 Train ML models
-      ↓
-🧠 Interpret results
-      ↓
-📝 Create report
-```
-
-For beginners, students, analysts, and developers, this can become a long and fragmented process.
-
 ### DataPilot
 
 ```text
-📁 Upload dataset
-      ↓
-⚡ Automatic profiling
-      ↓
-📊 Interactive analytics
-      ↓
-💬 Ask your data
-      ↓
-🤖 Machine learning
-      ↓
-🧠 AI-powered insights
-      ↓
-📄 Generate report
+                    ┌─────────────┐
+                    │   DATASET   │
+                    └──────┬──────┘
+                           ↓
+                  ┌────────────────┐
+                  │   DATAPILOT    │
+                  └───────┬────────┘
+                          ↓
+             ┌────────────┼────────────┐
+             ↓            ↓            ↓
+          Explore       Ask AI       Build ML
+             │            │            │
+             └────────────┼────────────┘
+                          ↓
+                   🧠 INSIGHTS
+                          ↓
+                   🎯 DECISIONS
 ```
 
-**One workspace. One dataset. One intelligent workflow.**
+---
+
+# ✨ FEATURE MATRIX
+
+|    | Capability           | What it does                                         |
+| -- | -------------------- | ---------------------------------------------------- |
+| 📂 | **Dataset Upload**   | Bring datasets directly into the workspace           |
+| 🔍 | **Auto Profiling**   | Understand structure, columns and data quality       |
+| 📊 | **Analytics**        | Explore patterns through interactive visualizations  |
+| 🤖 | **Machine Learning** | Build analytical and ML workflows                    |
+| 🧠 | **AI Insights**      | Turn analytical results into understandable insights |
+| 💬 | **Ask Your Data**    | Interact with datasets using natural language        |
+| 📑 | **Reports**          | Convert analysis into structured output              |
 
 ---
 
-# 🚀 Core Features
+# 💬 ASK YOUR DATA
 
-## 📂 01 — Dataset Upload
+One of DataPilot's biggest ideas is removing the barrier between **human questions and data analysis**.
 
-Bring your dataset into DataPilot and start analyzing it without manually writing the initial exploration code.
-
----
-
-## 🔎 02 — Automated Dataset Profiling
-
-Quickly understand what you're working with.
-
-DataPilot can analyze aspects such as:
-
-* Dataset structure
-* Columns
-* Data types
-* Missing values
-* Statistical information
-* Basic data quality characteristics
-* Dataset-level summaries
-
-Instead of starting with:
+Instead of:
 
 ```python
-df.head()
-df.info()
-df.describe()
-df.isnull().sum()
+df.groupby("region")["revenue"].mean()
 ```
 
-you get the information through the application.
+the user should be able to think:
 
----
+> **"Which region has the highest average revenue?"**
 
-## 📊 03 — Interactive Data Analytics
-
-Explore your dataset through visual analytics rather than relying entirely on terminal output or notebooks.
-
-The frontend uses **Recharts** for interactive data visualization.
-
-Typical analytical workflows can include:
-
-```text
-Dataset
-   ↓
-Select variables
-   ↓
-Analyze relationships
-   ↓
-Visualize patterns
-   ↓
-Interpret results
-```
-
----
-
-## 🤖 04 — Machine Learning
-
-DataPilot brings machine-learning capabilities into the same analytical workflow.
-
-The backend is built with:
-
-* Pandas
-* NumPy
-* Scikit-learn
-
-This provides the foundation for data preprocessing, analysis, and machine-learning workflows.
-
----
-
-## 🧠 05 — AI-Powered Insights
-
-DataPilot goes beyond charts and statistics.
-
-The AI layer can transform analytical results into human-readable insights.
-
-Instead of only seeing:
-
-```text
-Accuracy: 87.4%
-```
-
-the goal is to provide context around:
-
-```text
-What happened?
-Why might it have happened?
-Which variables matter?
-What should I investigate next?
-```
-
-Supported AI providers in the current project include:
-
-* Google Gemini
-* OpenAI
-* Ollama
-
----
-
-## 💬 06 — Ask Your Data
-
-One of the core ideas behind DataPilot is making data interactive through natural language.
-
-Instead of asking:
-
-> "How do I calculate the average revenue for each region?"
-
-you should be able to ask:
-
-> **"Which region generated the highest average revenue?"**
-
-The goal is to bridge the gap between:
+And move from:
 
 ```text
 Human Question
       ↓
-AI Understanding
+AI understands intent
       ↓
-Data Analysis
+Data analysis
       ↓
 Result
       ↓
 Explanation
 ```
 
+This is where DataPilot moves from a dashboard toward an **AI data copilot**.
+
 ---
 
-## 📄 07 — Report Generation
+# 🧠 AI ENGINE
 
-DataPilot is designed to move beyond individual charts and answers toward a complete analytical output.
-
-The reporting workflow can bring together:
+DataPilot is designed to work with multiple AI providers.
 
 ```text
-Dataset Profile
-      +
-Analytics
-      +
-Visualizations
-      +
-ML Results
-      +
-AI Insights
-      ↓
-Analytical Report
+                    ┌───────────────────┐
+                    │    DATA PILOT     │
+                    └─────────┬─────────┘
+                              │
+                 ┌────────────┼────────────┐
+                 ▼            ▼            ▼
+             Gemini        OpenAI        Ollama
+                 │            │            │
+                 └────────────┼────────────┘
+                              ▼
+                     ┌────────────────┐
+                     │  AI ANALYSIS   │
+                     └───────┬────────┘
+                             ↓
+                     🧠 INSIGHTS
 ```
 
+### AI can be used for:
+
+* Natural-language questions
+* Insight generation
+* Analytical explanations
+* Data interpretation
+* Recommendations
+* AI-assisted exploration
+
 ---
 
-# 🧠 Intelligence Layer
-
-DataPilot is not intended to be just another dashboard.
-
-Its long-term direction is an **AI-assisted analytical workflow**.
+# 📊 DATA INTELLIGENCE PIPELINE
 
 ```text
-                 USER
-                  │
-                  ▼
           ┌───────────────┐
-          │ Natural Query │
+          │     INPUT     │
+          │     DATA      │
           └───────┬───────┘
-                  │
-                  ▼
+                  ↓
           ┌───────────────┐
-          │ AI Understands│
-          │   Intent      │
+          │   PROFILING   │
           └───────┬───────┘
-                  │
-                  ▼
+                  ↓
           ┌───────────────┐
-          │ Data Analysis │
-          │    Engine     │
+          │  EXPLORATION  │
           └───────┬───────┘
-                  │
-          ┌───────┴────────┐
-          ▼                ▼
-      Statistics          ML
-          │                │
-          └───────┬────────┘
-                  ▼
+                  ↓
+       ┌──────────┴──────────┐
+       ↓                     ↓
+ ┌───────────┐         ┌───────────┐
+ │ ANALYTICS │         │    ML     │
+ └─────┬─────┘         └─────┬─────┘
+       │                     │
+       └──────────┬──────────┘
+                  ↓
           ┌───────────────┐
-          │ AI Interprets │
-          │    Results    │
+          │   AI ENGINE   │
           └───────┬───────┘
-                  │
-                  ▼
+                  ↓
           ┌───────────────┐
-          │   Insight     │
-          │   + Action    │
+          │    INSIGHT    │
+          └───────┬───────┘
+                  ↓
+          ┌───────────────┐
+          │    ACTION     │
           └───────────────┘
 ```
 
 ---
 
-# 🏗️ Architecture
+# 🎨 THE EXPERIENCE
 
-DataPilot follows a separated frontend/backend architecture.
+DataPilot is not designed to feel like a traditional data-science dashboard.
+
+The visual direction is:
 
 ```text
-                         DATA PILOT
-                             │
-             ┌───────────────┴───────────────┐
-             │                               │
-             ▼                               ▼
-    ┌─────────────────┐             ┌─────────────────┐
-    │    FRONTEND     │             │     BACKEND     │
-    │                 │             │                 │
-    │ React           │◄───────────►│ FastAPI         │
-    │ TypeScript      │     API     │ Python          │
-    │ Tailwind CSS    │             │ Pandas          │
-    │ Recharts        │             │ NumPy           │
-    │ Axios           │             │ Scikit-learn    │
-    └─────────────────┘             └────────┬────────┘
-                                             │
-                         ┌───────────────────┼──────────────────┐
-                         │                   │                  │
-                         ▼                   ▼                  ▼
-                  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-                  │  AI LAYER   │    │ PostgreSQL  │    │   Analysis  │
-                  │             │    │             │    │   Services  │
-                  │ Gemini      │    │  Database   │    │             │
-                  │ OpenAI      │    │             │    │ Profiling    │
-                  │ Ollama      │    │             │    │ Analytics    │
-                  └─────────────┘    └─────────────┘    │ ML          │
-                                                        └─────────────┘
+       DARK INTERFACE
+             +
+       GLASS SURFACES
+             +
+      CYAN / BLUE GLOW
+             +
+       DATA VISUALS
+             +
+       MICRO MOTIONS
+             +
+        AI EFFECTS
+             ↓
+       PREMIUM EXPERIENCE
+```
+
+### Planned / implemented visual layer
+
+✨ Smooth page transitions
+✨ Animated data cards
+✨ Staggered dashboard reveals
+✨ Interactive charts
+✨ AI loading states
+✨ Hover micro-interactions
+✨ Animated counters
+✨ Data-flow animations
+✨ Subtle particle effects
+✨ Three-dimensional AI/data visuals
+
+The visual effects should enhance the analytical experience rather than compete with the data.
+
+---
+
+# 🌌 THREE.JS — THE DATA UNIVERSE
+
+For the 3D layer, DataPilot can evolve beyond traditional dashboard visuals.
+
+Imagine entering the application and seeing:
+
+```text
+                  ✦
+             ·         ·
+         ·       ◉         ·
+             ╲   │   ╱
+        ─────── DATA ───────
+             ╱   │   ╲
+         ·       │       ·
+             ·   │   ·
+                 ✦
+```
+
+Three.js can be used for:
+
+* Interactive AI backgrounds
+* Data-node networks
+* Particle fields
+* 3D data relationships
+* Dataset visualization
+* Interactive hero environments
+
+The principle:
+
+> **3D should explain the product, not distract from it.**
+
+---
+
+# 🌀 MOTION SYSTEM
+
+DataPilot's interface can use **Anime.js** for intentional micro-interactions.
+
+### Page entrance
+
+```text
+Header
+   ↓
+Hero
+   ↓
+Stats
+   ↓
+Charts
+   ↓
+Insights
+```
+
+with staggered reveals.
+
+### Data loading
+
+```text
+████████░░░░  72%
+```
+
+with smooth transitions.
+
+### Insight generation
+
+```text
+Analyzing
+   ●
+   ● ●
+   ● ● ●
+   ↓
+Insight ready
+```
+
+### Dashboard
+
+Cards, metrics and charts can enter progressively rather than appearing instantly.
+
+---
+
+# 🏗️ ARCHITECTURE
+
+```text
+                         DATAPILOT
+                            │
+                            ▼
+                  ┌──────────────────┐
+                  │     FRONTEND     │
+                  │                  │
+                  │ React            │
+                  │ TypeScript       │
+                  │ Tailwind         │
+                  │ Recharts         │
+                  │ React Router     │
+                  └────────┬─────────┘
+                           │
+                         Axios
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │      FASTAPI     │
+                  │       API        │
+                  └────────┬─────────┘
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+       ┌─────────┐    ┌──────────┐   ┌──────────┐
+       │ Pandas  │    │Scikit-   │   │ AI       │
+       │ NumPy   │    │learn     │   │ Engine   │
+       └─────────┘    └──────────┘   └────┬─────┘
+                                          │
+                           ┌──────────────┼──────────────┐
+                           ▼              ▼              ▼
+                        Gemini         OpenAI         Ollama
+                                          │
+                                          ▼
+                                   ┌─────────────┐
+                                   │ PostgreSQL  │
+                                   └─────────────┘
 ```
 
 ---
 
-# 🧩 Technology Stack
+# 🛠️ TECH STACK
 
-| Layer            | Technology   | Role                              |
-| ---------------- | ------------ | --------------------------------- |
-| 🎨 Frontend      | React        | Application UI                    |
-| 🟦 Language      | TypeScript   | Type-safe frontend development    |
-| ⚡ Build Tool     | Vite         | Development and production builds |
-| 🎨 Styling       | Tailwind CSS | UI styling                        |
-| 🧭 Routing       | React Router | Client-side navigation            |
-| 🌐 HTTP          | Axios        | Frontend ↔ backend communication  |
-| 📊 Visualization | Recharts     | Interactive charts                |
-| 🐍 Backend       | Python       | Data and application logic        |
-| 🚀 API           | FastAPI      | Backend API                       |
-| 🐼 Data          | Pandas       | Data manipulation                 |
-| 🔢 Computing     | NumPy        | Numerical operations              |
-| 🤖 ML            | Scikit-learn | Machine-learning workflows        |
-| 🗄️ Database     | PostgreSQL   | Persistent data storage           |
-| 🧠 AI            | Gemini       | AI-powered analysis               |
-| 🧠 AI            | OpenAI       | AI provider                       |
-| 🦙 Local AI      | Ollama       | Local model support               |
+### Frontend
 
-The current repository explicitly lists these technologies across its README and frontend package configuration.
+<p>
+<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind" />
+</p>
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+* Axios
+* Recharts
+
+### Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,fastapi" />
+</p>
+
+* Python
+* FastAPI
+* Pandas
+* NumPy
+* Scikit-learn
+
+### Database
+
+<p>
+<img src="https://skillicons.dev/icons?i=postgres" />
+</p>
+
+**PostgreSQL**
+
+### AI
+
+```text
+🟣 Google Gemini
+🔵 OpenAI
+🟢 Ollama
+```
 
 ---
 
-# 📂 Project Structure
-
-The repository is organized into independent frontend and backend applications.
+# 📂 PROJECT STRUCTURE
 
 ```text
 DataPilot/
@@ -444,153 +533,41 @@ DataPilot/
 │   ├── src/
 │   ├── package.json
 │   ├── vite.config.ts
-│   ├── tsconfig.json
-│   └── index.html
+│   └── tsconfig.json
 │
-├── .gitignore
+├── docker-compose.yml
 ├── LICENSE
 └── README.md
 ```
 
-The backend currently separates API, core, schemas, services, and utilities, while the frontend is a Vite-based React application.
-
 ---
 
-# 🔄 How DataPilot Works
+# ⚙️ QUICK START
 
-```text
-┌──────────────────────┐
-│  1. Upload Dataset   │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ 2. Profile the Data  │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│  3. Explore & Chart  │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ 4. Ask Questions     │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│  5. Run Analytics    │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│  6. Apply ML         │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ 7. Generate Insights │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│  8. Generate Report  │
-└──────────────────────┘
-```
-
----
-
-# 🎨 Product Experience
-
-DataPilot is being designed as more than a functional analytics tool.
-
-The target experience is:
-
-```text
-               ┌───────────────────────────┐
-               │                           │
-               │        DATA PILOT         │
-               │                           │
-               │  Explore. Ask. Discover.  │
-               │                           │
-               └─────────────┬─────────────┘
-                             │
-             ┌───────────────┼───────────────┐
-             ▼               ▼               ▼
-          📊 Explore       💬 Ask          🤖 Analyze
-             │               │               │
-             └───────────────┼───────────────┘
-                             ▼
-                         🧠 Insights
-                             │
-                             ▼
-                         🎯 Decisions
-```
-
-As the product evolves, the interface can incorporate polished micro-interactions, data-driven motion, and lightweight visual effects without compromising analytical clarity.
-
----
-
-# 🧪 Testing
-
-The backend currently includes dedicated test files for:
-
-```text
-backend/
-├── test_gemini.py
-├── test_insights.py
-└── test_profiler.py
-```
-
-These cover important AI, insight-generation, and profiling areas of the backend.
-
-The frontend also provides lint and production-build scripts:
-
-```bash
-npm run lint
-npm run build
-```
-
-These scripts are defined in the current frontend configuration.
-
----
-
-# ⚙️ Getting Started
-
-## Prerequisites
-
-Make sure you have:
-
-* Node.js
-* npm
-* Python 3.x
-* PostgreSQL
-* An AI provider/API key if using cloud AI features
-
----
-
-## 1. Clone the Repository
+## 01 — Clone
 
 ```bash
 git clone https://github.com/dhanush080607/DataPilot.git
 cd DataPilot
 ```
 
----
-
-## 2. Setup the Backend
+## 02 — Backend
 
 ```bash
 cd backend
-```
 
-Create a virtual environment:
+python -m venv .venv
+```
 
 ### Windows
 
 ```bash
-python -m venv .venv
 .venv\Scripts\activate
 ```
 
 ### macOS / Linux
 
 ```bash
-python3 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -602,42 +579,33 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Configure Environment Variables
+## 03 — Environment
 
-Create your backend environment configuration according to the variables required by the application.
-
-Example:
+Create your environment configuration.
 
 ```env
-DATABASE_URL=your_postgresql_connection_string
+DATABASE_URL=your_postgresql_url
 
 GEMINI_API_KEY=your_gemini_key
+
 OPENAI_API_KEY=your_openai_key
 ```
 
-Only configure the providers you actually use.
+Only configure the providers you intend to use.
 
-> ⚠️ Never commit API keys, passwords, or database credentials to GitHub.
+> 🔐 Never commit secrets to GitHub.
 
 ---
 
-## 4. Start the Backend
-
-From the `backend` directory:
+## 04 — Run Backend
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-The API will normally be available at:
-
-```text
-http://localhost:8000
-```
-
 ---
 
-## 5. Start the Frontend
+## 05 — Run Frontend
 
 Open another terminal:
 
@@ -647,75 +615,72 @@ npm install
 npm run dev
 ```
 
-Vite will provide the local development URL.
-
 ---
 
-# 🛠️ Development Commands
+# 🧪 DEVELOPMENT
 
 ### Frontend
 
 ```bash
 npm run dev
-```
-
-Start the development server.
-
-```bash
 npm run build
-```
-
-Create a production build.
-
-```bash
+npm run lint
 npm run preview
 ```
 
-Preview the production build locally.
+### Backend
 
 ```bash
-npm run lint
+uvicorn app.main:app --reload
 ```
 
-Run linting.
+### Tests
 
-These commands correspond to the current frontend `package.json`.
-
----
-
-# 🔐 Security
-
-DataPilot uses external AI providers and database connectivity, so sensitive configuration should always remain outside the source code.
-
-### Never commit:
-
-```text
-❌ API keys
-❌ Database passwords
-❌ .env files
-❌ Authentication secrets
-❌ Private credentials
-```
-
-Use environment variables instead:
-
-```text
-Application
-    │
-    ├── Environment Variables
-    │
-    ├── Database Credentials
-    │
-    └── AI Provider Keys
+```bash
+python test_gemini.py
+python test_insights.py
+python test_profiler.py
 ```
 
 ---
 
-# 🗺️ Roadmap
+# 📈 ROADMAP
 
-DataPilot is an evolving project.
+```text
+                DATAPILOT EVOLUTION
+                       │
+                       ▼
+        ┌───────────────────────────┐
+        │       FOUNDATION          │
+        │ Upload • Profiling • API  │
+        └─────────────┬─────────────┘
+                      │
+                      ▼
+        ┌───────────────────────────┐
+        │       INTELLIGENCE        │
+        │ AI • Ask Data • Insights   │
+        └─────────────┬─────────────┘
+                      │
+                      ▼
+        ┌───────────────────────────┐
+        │      VISUALIZATION        │
+        │ Charts • Motion • 3D      │
+        └─────────────┬─────────────┘
+                      │
+                      ▼
+        ┌───────────────────────────┐
+        │       AUTOMATION           │
+        │ AI workflows • ML         │
+        └─────────────┬─────────────┘
+                      │
+                      ▼
+        ┌───────────────────────────┐
+        │       PRODUCTION           │
+        │ Scale • Security • Cloud  │
+        └───────────────────────────┘
+```
 
-### ✅ Foundation
+### 🟢 Completed
 
 * [x] React frontend
 * [x] TypeScript
@@ -724,125 +689,115 @@ DataPilot is an evolving project.
 * [x] Dataset profiling
 * [x] Analytics foundation
 * [x] Machine-learning foundation
-* [x] AI integration foundation
-* [x] PostgreSQL integration
-* [x] Ask Your Data concept
-* [x] Report-generation foundation
+* [x] AI provider integration
+* [x] PostgreSQL foundation
+* [x] AI insights foundation
 
-### 🚧 Product Intelligence
+### 🟡 In Progress
 
-* [ ] More robust natural-language data querying
-* [ ] Deeper AI-generated insights
-* [ ] Better analytical recommendations
-* [ ] Improved ML workflow automation
-* [ ] Stronger error handling and edge cases
+* [ ] Advanced AI data interaction
+* [ ] Better insight generation
+* [ ] Advanced analytical workflows
+* [ ] Improved dashboard experience
+* [ ] Production hardening
 
-### 🎨 Product Experience
+### 🔵 Next
 
-* [ ] Advanced dashboard interactions
-* [ ] Premium data visualizations
-* [ ] Smooth UI motion
-* [ ] Anime.js micro-interactions
-* [ ] Carefully designed Three.js visualizations
-* [ ] Improved mobile experience
-* [ ] Accessibility improvements
-
-### 🚀 Production
-
-* [ ] Comprehensive automated testing
-* [ ] Production deployment
+* [ ] Advanced Anime.js motion system
+* [ ] Three.js data/AI visual layer
+* [ ] Advanced report generation
+* [ ] Improved ML automation
 * [ ] Performance optimization
-* [ ] Better observability
-* [ ] Documentation expansion
-* [ ] User feedback system
-
-> Roadmap items represent the project's direction and should not be interpreted as completed functionality.
+* [ ] Comprehensive testing
+* [ ] Production deployment
 
 ---
 
-# 💡 Why DataPilot?
+# 🔐 SECURITY
 
-There are countless tools that can:
-
-* display a chart,
-* calculate statistics,
-* run a machine-learning model,
-* or call an LLM.
-
-DataPilot's goal is to **connect those capabilities into a single workflow**.
+Never expose:
 
 ```text
-                 ┌──────────────┐
-                 │     DATA     │
-                 └──────┬───────┘
-                        │
-                        ▼
-              ┌───────────────────┐
-              │    UNDERSTAND     │
-              └─────────┬─────────┘
-                        │
-                        ▼
-              ┌───────────────────┐
-              │      EXPLORE      │
-              └─────────┬─────────┘
-                        │
-                        ▼
-              ┌───────────────────┐
-              │      ANALYZE      │
-              └─────────┬─────────┘
-                        │
-                        ▼
-              ┌───────────────────┐
-              │      EXPLAIN      │
-              └─────────┬─────────┘
-                        │
-                        ▼
-              ┌───────────────────┐
-              │      DECIDE       │
-              └───────────────────┘
+❌ API Keys
+❌ Database passwords
+❌ .env files
+❌ Authentication secrets
+❌ Private credentials
 ```
 
-**The ultimate goal is not just to analyze data.**
-
-### It's to help people understand what their data is telling them.
-
----
-
-# 🤝 Contributing
-
-Contributions, ideas, bug reports, and feature suggestions are welcome.
+Use:
 
 ```text
-Fork
-  ↓
-Clone
-  ↓
-Create a branch
-  ↓
-Make your changes
-  ↓
-Test
-  ↓
-Commit
-  ↓
-Push
-  ↓
-Open a Pull Request
+Environment Variables
+        ↓
+Backend
+        ↓
+AI / Database
 ```
-
-For significant changes, open an issue first to discuss the proposed direction.
 
 ---
 
-# 👨‍💻 Built By
+# 🤝 CONTRIBUTING
+
+Want to improve DataPilot?
+
+```text
+⭐ Star
+  ↓
+🍴 Fork
+  ↓
+🌿 Branch
+  ↓
+💻 Code
+  ↓
+🧪 Test
+  ↓
+📤 Push
+  ↓
+🔀 Pull Request
+```
+
+Ideas, improvements and bug reports are welcome.
+
+---
+
+# 🌟 THE VISION
+
+DataPilot is being built around a larger idea:
+
+> ### What if interacting with data felt as natural as talking to an expert?
+
+Instead of asking users to understand every analytical operation first, DataPilot aims to let users start with the question.
+
+```text
+"I want to understand my dataset."
+             ↓
+"What's unusual here?"
+             ↓
+"Why is this happening?"
+             ↓
+"What should I investigate?"
+             ↓
+"What model should I try?"
+             ↓
+"What does the result mean?"
+```
+
+The system should help turn those questions into **analysis, insights and decisions**.
+
+---
+
+# 👨‍💻 BUILT BY
 
 <p align="center">
 
-<strong>Dhanush</strong>
+<img src="https://github.com/dhanush080607.png?size=120" width="120" style="border-radius:50%"/>
 
 <br/>
 
-CSE — Data Science
+### Dhanush
+
+<strong>CSE — Data Science</strong>
 
 <br/>
 
@@ -851,37 +806,49 @@ AI • Data Science • Machine Learning • Full-Stack Development
 <br/><br/>
 
 <a href="https://github.com/dhanush080607">
-  <img src="https://img.shields.io/badge/GitHub-dhanush080607-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+<img src="https://img.shields.io/badge/GitHub-dhanush080607-181717?style=for-the-badge&logo=github"/>
 </a>
 
 </p>
 
 ---
 
-# ⭐ Support the Project
+# ⭐ SUPPORT DATAPILOT
 
-If DataPilot is useful or interesting:
+If you like the project:
+
+<p align="center">
 
 ⭐ **Star the repository**
 
-🐛 **Report bugs**
+🐛 **Report a bug**
 
-💡 **Suggest improvements**
+💡 **Suggest an idea**
 
 🤝 **Contribute**
 
-Every star and contribution helps the project grow.
+</p>
 
 ---
 
 <p align="center">
 
-### ⚡ DataPilot
+<img
+src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:00D9FF,50:0A1A2F,100:050505&section=footer&animation=fadeIn"
+/>
 
-<strong>From raw data → to real understanding.</strong>
+</p>
+
+<p align="center">
+
+<strong>⚡ DataPilot</strong>
+
+<br/>
+
+<em>Explore. Ask. Analyze. Understand.</em>
 
 <br/><br/>
 
-<em>Explore less manually. Understand more intelligently.</em>
+<sub>Built with Python • React • AI • Data</sub>
 
 </p>
