@@ -1,105 +1,85 @@
-<!-- ========================================================= -->
+<div align="center">
 
-<!--                       HERO SECTION                        -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,45:3B82F6,75:EC4899,100:22D3EE&height=250&section=header&text=DATAPILOT&fontSize=72&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=AI-Powered%20Data%20Intelligence&descAlignY=60&descSize=20&descColor=F8FAFC"/>
 
-<!-- ========================================================= -->
-
-<p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,50:0A1A2F,100:00D9FF&text=DATAPILOT&fontSize=62&fontColor=FFFFFF&fontAlignY=40&desc=AI-Powered%20Data%20Intelligence%20Platform&descAlignY=62&descSize=20&animation=fadeIn"
-    width="100%"
-  />
-</p>
-
-<p align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=850&lines=Turn+Raw+Data+Into+Real+Insights.;Explore+Your+Data+With+AI.;Ask+Questions+In+Natural+Language.;Analyze.+Visualize.+Understand.;Your+AI+Copilot+For+Data." />
-
-</p>
-
-<p align="center">
-
-<a href="https://github.com/dhanush080607/DataPilot">
-<img src="https://img.shields.io/badge/🚀_EXPLORE_REPOSITORY-00D9FF?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://github.com/dhanush080607/DataPilot/stargazers">
-<img src="https://img.shields.io/github/stars/dhanush080607/DataPilot?style=for-the-badge&logo=github&label=STARS&color=111827"/>
-</a>
-
-<a href="https://github.com/dhanush080607/DataPilot/network/members">
-<img src="https://img.shields.io/github/forks/dhanush080607/DataPilot?style=for-the-badge&logo=github&label=FORKS&color=111827"/>
-</a>
-
-</p>
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/AI-Gemini%20%7C%20OpenAI%20%7C%20Ollama-8A2BE2?style=flat-square"/>
-
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=22&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=750&lines=Turn+Raw+Data+Into+Intelligence;Explore+Your+Data+With+AI;Ask+Questions+In+Natural+Language;Analyze.+Visualize.+Understand.;From+Data+To+Decisions."/>
 
 <br/>
 
-<p align="center">
-  <strong>DataPilot is an AI-powered data analytics and machine learning workspace built to transform datasets into understandable, actionable intelligence.</strong>
-</p>
+[![GitHub](https://img.shields.io/badge/GitHub-DataPilot-8B5CF6?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/dhanush080607/DataPilot)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)](https://www.postgresql.org/)
+
+<br/>
+
+<img src="https://img.shields.io/badge/AI-Gemini%20%7C%20OpenAI%20%7C%20Ollama-EC4899?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Analytics-Recharts-22D3EE?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ML-Scikit--learn-8B5CF6?style=for-the-badge"/>
+
+</div>
 
 ---
 
+<div align="center">
+
 # ⚡ DATA → INTELLIGENCE
 
-<p align="center">
+### `UPLOAD` → `PROFILE` → `EXPLORE` → `ASK` → `ANALYZE` → `UNDERSTAND`
+
+</div>
 
 ```text
-╭──────────────────────────────────────────────────────────╮
-│                                                          │
-│                       YOUR DATA                          │
-│                                                          │
-╰───────────────────────────┬──────────────────────────────╯
-                            │
-                            ▼
-                  ┌───────────────────┐
-                  │   DATA PROFILING   │
-                  │  Structure • QA   │
-                  └─────────┬─────────┘
-                            │
-             ┌──────────────┼──────────────┐
-             ▼              ▼              ▼
-        📊 ANALYTICS    🤖 MACHINE      🧠 AI
-                         LEARNING       INSIGHTS
-             │              │              │
-             └──────────────┼──────────────┘
-                            ▼
-                  ┌───────────────────┐
-                  │     DATAPILOT     │
-                  │  INTELLIGENCE     │
-                  └─────────┬─────────┘
-                            │
-                            ▼
-                  ┌───────────────────┐
-                  │    DECISIONS      │
-                  └───────────────────┘
+╭──────────────────────────────────────────────────────────────╮
+│                                                              │
+│                         YOUR DATA                            │
+│                                                              │
+╰──────────────────────────────┬───────────────────────────────╯
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   DATA PROFILING    │
+                    │ Structure • Quality │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              ▼                ▼                ▼
+        📊 ANALYTICS      🤖 MACHINE       🧠 AI
+                           LEARNING        INSIGHTS
+              │                │                │
+              └────────────────┼────────────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │      DATAPILOT      │
+                    │    INTELLIGENCE     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     DECISIONS       │
+                    └─────────────────────┘
 ```
-
-</p>
 
 ---
 
 # 🧠 WHAT IS DATAPILOT?
 
-**DataPilot** is built around one simple idea:
+**DataPilot** is an AI-powered data intelligence platform designed around one simple idea:
 
 > ### Data analysis shouldn't stop at charts.
 
-A dataset contains patterns, relationships, anomalies and signals.
+A dataset contains:
 
-The problem is that discovering those signals traditionally requires moving between:
+* Patterns
+* Relationships
+* Anomalies
+* Trends
+* Signals
+* Opportunities
+
+But discovering those signals traditionally requires moving between multiple tools.
 
 ```text
 Jupyter
@@ -108,38 +88,79 @@ Python
    +
 Pandas
    +
-Visualization tools
+Visualization
    +
 Machine Learning
    +
-AI assistants
+AI Assistants
 ```
 
-DataPilot brings these pieces together into one intelligent workflow.
+DataPilot brings these capabilities together into a unified workflow.
 
 ```text
-UPLOAD
-   ↓
-PROFILE
-   ↓
-EXPLORE
-   ↓
-ASK
-   ↓
-ANALYZE
-   ↓
-MODEL
-   ↓
-UNDERSTAND
-   ↓
-ACT
+       📂 UPLOAD
+           ↓
+       🔍 PROFILE
+           ↓
+       📊 EXPLORE
+           ↓
+       💬 ASK
+           ↓
+       ⚙️ ANALYZE
+           ↓
+       🤖 MODEL
+           ↓
+       🧠 UNDERSTAND
+           ↓
+       🎯 ACT
+```
+
+---
+
+# 🌌 THE DATAPILOT EXPERIENCE
+
+<div align="center">
+
+### From raw tables → to meaningful intelligence
+
+</div>
+
+```text
+                 ┌─────────────────┐
+                 │      DATA       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    PROFILING    │
+                 └────────┬────────┘
+                          │
+              ┌───────────┼───────────┐
+              ▼           ▼           ▼
+           EXPLORE       ASK        MODEL
+              │           │           │
+              └───────────┼───────────┘
+                          ▼
+                 ┌─────────────────┐
+                 │   AI ENGINE     │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    INSIGHTS     │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │   DECISIONS     │
+                 └─────────────────┘
 ```
 
 ---
 
 # 🔥 WHY DATAPILOT?
 
-### Traditional Data Analysis
+## Traditional Data Analysis
 
 ```text
 Dataset
@@ -159,41 +180,53 @@ Interpret
 Write Report
 ```
 
-### DataPilot
+## DataPilot
 
 ```text
-                    ┌─────────────┐
-                    │   DATASET   │
-                    └──────┬──────┘
+                    ┌───────────────┐
+                    │    DATASET    │
+                    └───────┬───────┘
+                            ↓
+                   ┌────────────────┐
+                   │    DATAPILOT   │
+                   └───────┬────────┘
                            ↓
-                  ┌────────────────┐
-                  │   DATAPILOT    │
-                  └───────┬────────┘
-                          ↓
-             ┌────────────┼────────────┐
-             ↓            ↓            ↓
-          Explore       Ask AI       Build ML
-             │            │            │
-             └────────────┼────────────┘
-                          ↓
-                   🧠 INSIGHTS
-                          ↓
-                   🎯 DECISIONS
+              ┌────────────┼────────────┐
+              ↓            ↓            ↓
+           Explore       Ask AI       Build ML
+              │            │            │
+              └────────────┼────────────┘
+                           ↓
+                    🧠 INSIGHTS
+                           ↓
+                    🎯 DECISIONS
 ```
+
+### The difference
+
+| Traditional Workflow   | DataPilot                  |
+| ---------------------- | -------------------------- |
+| Multiple tools         | One workspace              |
+| Manual profiling       | Automated profiling        |
+| Write queries/code     | Ask questions              |
+| Separate visualization | Integrated analytics       |
+| Separate AI assistant  | AI-powered insights        |
+| Manual interpretation  | AI-assisted interpretation |
+| Manual workflow        | Guided intelligence        |
 
 ---
 
 # ✨ FEATURE MATRIX
 
-|    | Capability           | What it does                                         |
-| -- | -------------------- | ---------------------------------------------------- |
-| 📂 | **Dataset Upload**   | Bring datasets directly into the workspace           |
-| 🔍 | **Auto Profiling**   | Understand structure, columns and data quality       |
-| 📊 | **Analytics**        | Explore patterns through interactive visualizations  |
-| 🤖 | **Machine Learning** | Build analytical and ML workflows                    |
-| 🧠 | **AI Insights**      | Turn analytical results into understandable insights |
-| 💬 | **Ask Your Data**    | Interact with datasets using natural language        |
-| 📑 | **Reports**          | Convert analysis into structured output              |
+| Capability              | What it does                                         |
+| ----------------------- | ---------------------------------------------------- |
+| 📂 **Dataset Upload**   | Bring datasets directly into the workspace           |
+| 🔍 **Auto Profiling**   | Understand structure, columns and data quality       |
+| 📊 **Analytics**        | Explore patterns through interactive visualizations  |
+| 🤖 **Machine Learning** | Build analytical and ML workflows                    |
+| 🧠 **AI Insights**      | Turn analytical results into understandable insights |
+| 💬 **Ask Your Data**    | Interact with datasets using natural language        |
+| 📑 **Reports**          | Convert analysis into structured output              |
 
 ---
 
@@ -201,173 +234,176 @@ Write Report
 
 One of DataPilot's biggest ideas is removing the barrier between **human questions and data analysis**.
 
-Instead of:
+Instead of writing:
 
 ```python
 df.groupby("region")["revenue"].mean()
 ```
 
-the user should be able to think:
+the user should be able to ask:
 
 > **"Which region has the highest average revenue?"**
 
-And move from:
+DataPilot aims to transform:
 
 ```text
 Human Question
-      ↓
+       ↓
 AI understands intent
-      ↓
+       ↓
 Data analysis
-      ↓
+       ↓
 Result
-      ↓
+       ↓
 Explanation
 ```
 
-This is where DataPilot moves from a dashboard toward an **AI data copilot**.
+This moves DataPilot from being just another dashboard toward an **AI data copilot**.
 
 ---
 
 # 🧠 AI ENGINE
 
-DataPilot is designed to work with multiple AI providers.
+DataPilot is designed around a multi-provider AI architecture.
 
 ```text
-                    ┌───────────────────┐
-                    │    DATA PILOT     │
-                    └─────────┬─────────┘
-                              │
-                 ┌────────────┼────────────┐
-                 ▼            ▼            ▼
-             Gemini        OpenAI        Ollama
-                 │            │            │
-                 └────────────┼────────────┘
-                              ▼
-                     ┌────────────────┐
-                     │  AI ANALYSIS   │
-                     └───────┬────────┘
-                             ↓
-                     🧠 INSIGHTS
+                       ┌───────────────┐
+                       │   DATAPILOT   │
+                       └───────┬───────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼              ▼              ▼
+            🟣 GEMINI       🔵 OPENAI      🟢 OLLAMA
+                │              │              │
+                └──────────────┼──────────────┘
+                               ▼
+                      ┌────────────────┐
+                      │   AI ENGINE    │
+                      └───────┬────────┘
+                              ↓
+                       🧠 INSIGHTS
 ```
 
-### AI can be used for:
+### AI capabilities
 
-* Natural-language questions
-* Insight generation
-* Analytical explanations
-* Data interpretation
-* Recommendations
-* AI-assisted exploration
+* 💬 Natural-language questions
+* 🧠 Insight generation
+* 📊 Analytical explanations
+* 🔎 Data interpretation
+* 🎯 Recommendations
+* 🤖 AI-assisted exploration
+* 📈 Result interpretation
 
 ---
 
 # 📊 DATA INTELLIGENCE PIPELINE
 
-```text
-          ┌───────────────┐
-          │     INPUT     │
-          │     DATA      │
-          └───────┬───────┘
-                  ↓
-          ┌───────────────┐
-          │   PROFILING   │
-          └───────┬───────┘
-                  ↓
-          ┌───────────────┐
-          │  EXPLORATION  │
-          └───────┬───────┘
-                  ↓
-       ┌──────────┴──────────┐
-       ↓                     ↓
- ┌───────────┐         ┌───────────┐
- │ ANALYTICS │         │    ML     │
- └─────┬─────┘         └─────┬─────┘
-       │                     │
-       └──────────┬──────────┘
-                  ↓
-          ┌───────────────┐
-          │   AI ENGINE   │
-          └───────┬───────┘
-                  ↓
-          ┌───────────────┐
-          │    INSIGHT    │
-          └───────┬───────┘
-                  ↓
-          ┌───────────────┐
-          │    ACTION     │
-          └───────────────┘
+```mermaid
+flowchart TD
+
+    A["📂 Raw Dataset"] --> B["🔍 Data Profiling"]
+
+    B --> C["📊 Exploration"]
+    B --> D["🤖 Machine Learning"]
+
+    C --> E["🧠 AI Engine"]
+    D --> E
+
+    E --> F["💡 Insight Generation"]
+
+    F --> G["🎯 Decision Support"]
+
+    style A fill:#8B5CF6,color:#fff,stroke:#8B5CF6
+    style B fill:#3B82F6,color:#fff,stroke:#3B82F6
+    style C fill:#22D3EE,color:#050816,stroke:#22D3EE
+    style D fill:#EC4899,color:#fff,stroke:#EC4899
+    style E fill:#8B5CF6,color:#fff,stroke:#8B5CF6
+    style F fill:#EC4899,color:#fff,stroke:#EC4899
+    style G fill:#22D3EE,color:#050816,stroke:#22D3EE
 ```
 
 ---
 
 # 🎨 THE EXPERIENCE
 
-DataPilot is not designed to feel like a traditional data-science dashboard.
+DataPilot is designed to feel different from a traditional data-science dashboard.
 
-The visual direction is:
+The visual direction:
 
 ```text
-       DARK INTERFACE
-             +
-       GLASS SURFACES
-             +
-      CYAN / BLUE GLOW
-             +
-       DATA VISUALS
-             +
-       MICRO MOTIONS
-             +
-        AI EFFECTS
-             ↓
-       PREMIUM EXPERIENCE
+              DARK INTERFACE
+                    +
+              GLASS SURFACES
+                    +
+          VIOLET / BLUE / MAGENTA
+                    +
+              CYAN ACCENTS
+                    +
+             DATA VISUALS
+                    +
+            MICRO MOTIONS
+                    +
+              AI EFFECTS
+                    ↓
+          PREMIUM EXPERIENCE
 ```
 
-### Planned / implemented visual layer
+### Visual language
 
-✨ Smooth page transitions
-✨ Animated data cards
-✨ Staggered dashboard reveals
-✨ Interactive charts
-✨ AI loading states
-✨ Hover micro-interactions
-✨ Animated counters
-✨ Data-flow animations
-✨ Subtle particle effects
-✨ Three-dimensional AI/data visuals
+🟣 **Violet** → AI / Intelligence
+🔵 **Blue** → Data / Technology
+🩷 **Magenta** → Insights / Creativity
+🟢 **Cyan** → Actions / Results
 
-The visual effects should enhance the analytical experience rather than compete with the data.
+### Planned visual layer
+
+* ✨ Smooth page transitions
+* 🎴 Animated data cards
+* 🌊 Staggered dashboard reveals
+* 📊 Interactive charts
+* 🤖 AI loading states
+* 🖱️ Hover micro-interactions
+* 🔢 Animated counters
+* 🔗 Data-flow animations
+* ✨ Subtle particle effects
+* 🌌 Three-dimensional AI/data visuals
+
+> The visual effects should enhance the analytical experience — not compete with the data.
 
 ---
 
 # 🌌 THREE.JS — THE DATA UNIVERSE
 
-For the 3D layer, DataPilot can evolve beyond traditional dashboard visuals.
+DataPilot can evolve beyond traditional dashboard visuals.
 
 Imagine entering the application and seeing:
 
 ```text
-                  ✦
-             ·         ·
-         ·       ◉         ·
-             ╲   │   ╱
-        ─────── DATA ───────
-             ╱   │   ╲
-         ·       │       ·
-             ·   │   ·
-                 ✦
+                       ✦
+                 ·           ·
+
+             ·        ◉        ·
+                  ╲   │   ╱
+
+        ─────────── DATA ───────────
+
+                  ╱   │   ╲
+             ·        │        ·
+
+                 ·    │    ·
+                       ✦
 ```
 
-Three.js can be used for:
+Three.js can eventually power:
 
-* Interactive AI backgrounds
-* Data-node networks
-* Particle fields
-* 3D data relationships
-* Dataset visualization
-* Interactive hero environments
+* 🌌 Interactive AI backgrounds
+* 🕸️ Data-node networks
+* ✨ Particle fields
+* 🔗 3D data relationships
+* 📊 Dataset visualization
+* 🌐 Interactive hero environments
 
-The principle:
+### Design principle
 
 > **3D should explain the product, not distract from it.**
 
@@ -375,7 +411,7 @@ The principle:
 
 # 🌀 MOTION SYSTEM
 
-DataPilot's interface can use **Anime.js** for intentional micro-interactions.
+DataPilot's future motion layer can use **Anime.js** for intentional micro-interactions.
 
 ### Page entrance
 
@@ -396,7 +432,7 @@ with staggered reveals.
 ### Data loading
 
 ```text
-████████░░░░  72%
+██████████████░░░░░░  72%
 ```
 
 with smooth transitions.
@@ -408,102 +444,85 @@ Analyzing
    ●
    ● ●
    ● ● ●
-   ↓
-Insight ready
+      ↓
+Insight Ready ✨
 ```
 
 ### Dashboard
 
-Cards, metrics and charts can enter progressively rather than appearing instantly.
+Cards, metrics and charts can enter progressively instead of appearing instantly.
 
 ---
 
 # 🏗️ ARCHITECTURE
 
-```text
-                         DATAPILOT
-                            │
-                            ▼
-                  ┌──────────────────┐
-                  │     FRONTEND     │
-                  │                  │
-                  │ React            │
-                  │ TypeScript       │
-                  │ Tailwind         │
-                  │ Recharts         │
-                  │ React Router     │
-                  └────────┬─────────┘
-                           │
-                         Axios
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │      FASTAPI     │
-                  │       API        │
-                  └────────┬─────────┘
-                           │
-            ┌──────────────┼──────────────┐
-            ▼              ▼              ▼
-       ┌─────────┐    ┌──────────┐   ┌──────────┐
-       │ Pandas  │    │Scikit-   │   │ AI       │
-       │ NumPy   │    │learn     │   │ Engine   │
-       └─────────┘    └──────────┘   └────┬─────┘
-                                          │
-                           ┌──────────────┼──────────────┐
-                           ▼              ▼              ▼
-                        Gemini         OpenAI         Ollama
-                                          │
-                                          ▼
-                                   ┌─────────────┐
-                                   │ PostgreSQL  │
-                                   └─────────────┘
+```mermaid
+flowchart TB
+
+    U["👤 USER"]
+
+    U --> F["🎨 FRONTEND"]
+
+    F --> R["React"]
+    F --> T["TypeScript"]
+    F --> TW["Tailwind CSS"]
+    F --> C["Recharts"]
+    F --> RR["React Router"]
+
+    F --> API["⚡ Axios"]
+
+    API --> B["🚀 FASTAPI"]
+
+    B --> P["🐼 Pandas"]
+    B --> N["🔢 NumPy"]
+    B --> S["🤖 Scikit-learn"]
+    B --> AI["🧠 AI ENGINE"]
+
+    AI --> G["🟣 Gemini"]
+    AI --> O["🔵 OpenAI"]
+    AI --> OL["🟢 Ollama"]
+
+    B --> DB["🐘 PostgreSQL"]
+
+    style U fill:#EC4899,color:#fff,stroke:#EC4899
+    style F fill:#8B5CF6,color:#fff,stroke:#8B5CF6
+    style B fill:#3B82F6,color:#fff,stroke:#3B82F6
+    style AI fill:#EC4899,color:#fff,stroke:#EC4899
+    style DB fill:#22D3EE,color:#050816,stroke:#22D3EE
 ```
 
 ---
 
 # 🛠️ TECH STACK
 
-### Frontend
+<div align="center">
 
-<p>
-<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind" />
-</p>
+### 🎨 FRONTEND
 
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* React Router
-* Axios
-* Recharts
+<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind"/>
 
-### Backend
+### ⚙️ BACKEND
 
-<p>
-<img src="https://skillicons.dev/icons?i=python,fastapi" />
-</p>
+<img src="https://skillicons.dev/icons?i=python,fastapi"/>
 
-* Python
-* FastAPI
-* Pandas
-* NumPy
-* Scikit-learn
+### 🗄️ DATABASE
 
-### Database
+<img src="https://skillicons.dev/icons?i=postgres"/>
 
-<p>
-<img src="https://skillicons.dev/icons?i=postgres" />
-</p>
-
-**PostgreSQL**
-
-### AI
+### 🧠 AI / DATA
 
 ```text
 🟣 Google Gemini
 🔵 OpenAI
 🟢 Ollama
+
+🐼 Pandas
+🔢 NumPy
+🤖 Scikit-learn
+📊 Recharts
 ```
+
+</div>
 
 ---
 
@@ -512,7 +531,7 @@ Cards, metrics and charts can enter progressively rather than appearing instantl
 ```text
 DataPilot/
 │
-├── backend/
+├── 🐍 backend/
 │   │
 │   ├── app/
 │   │   ├── api/
@@ -527,7 +546,7 @@ DataPilot/
 │   ├── test_insights.py
 │   └── test_profiler.py
 │
-├── frontend/
+├── ⚛️ frontend/
 │   │
 │   ├── public/
 │   ├── src/
@@ -535,9 +554,8 @@ DataPilot/
 │   ├── vite.config.ts
 │   └── tsconfig.json
 │
-├── docker-compose.yml
-├── LICENSE
-└── README.md
+├── 📜 LICENSE
+└── 📖 README.md
 ```
 
 ---
@@ -548,8 +566,11 @@ DataPilot/
 
 ```bash
 git clone https://github.com/dhanush080607/DataPilot.git
+
 cd DataPilot
 ```
+
+---
 
 ## 02 — Backend
 
@@ -593,7 +614,7 @@ OPENAI_API_KEY=your_openai_key
 
 Only configure the providers you intend to use.
 
-> 🔐 Never commit secrets to GitHub.
+> 🔐 **Never commit secrets to GitHub.**
 
 ---
 
@@ -611,15 +632,19 @@ Open another terminal:
 
 ```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
+
+Then open the local development URL shown by Vite.
 
 ---
 
 # 🧪 DEVELOPMENT
 
-### Frontend
+## Frontend
 
 ```bash
 npm run dev
@@ -628,13 +653,13 @@ npm run lint
 npm run preview
 ```
 
-### Backend
+## Backend
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-### Tests
+## Tests
 
 ```bash
 python test_gemini.py
@@ -647,40 +672,45 @@ python test_profiler.py
 # 📈 ROADMAP
 
 ```text
-                DATAPILOT EVOLUTION
-                       │
-                       ▼
-        ┌───────────────────────────┐
-        │       FOUNDATION          │
-        │ Upload • Profiling • API  │
-        └─────────────┬─────────────┘
-                      │
-                      ▼
-        ┌───────────────────────────┐
-        │       INTELLIGENCE        │
-        │ AI • Ask Data • Insights   │
-        └─────────────┬─────────────┘
-                      │
-                      ▼
-        ┌───────────────────────────┐
-        │      VISUALIZATION        │
-        │ Charts • Motion • 3D      │
-        └─────────────┬─────────────┘
-                      │
-                      ▼
-        ┌───────────────────────────┐
-        │       AUTOMATION           │
-        │ AI workflows • ML         │
-        └─────────────┬─────────────┘
-                      │
-                      ▼
-        ┌───────────────────────────┐
-        │       PRODUCTION           │
-        │ Scale • Security • Cloud  │
-        └───────────────────────────┘
+                         DATAPILOT
+                            │
+                            ▼
+              ┌────────────────────────┐
+              │      FOUNDATION        │
+              │ Upload • Profiling     │
+              │ Analytics • API        │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │     INTELLIGENCE       │
+              │ AI • Ask Data          │
+              │ Insights               │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │     VISUALIZATION      │
+              │ Charts • Motion • 3D   │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │       AUTOMATION       │
+              │ AI Workflows • ML      │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │       PRODUCTION       │
+              │ Scale • Security       │
+              │ Cloud • Testing        │
+              └────────────────────────┘
 ```
 
-### 🟢 Completed
+---
+
+## 🟢 COMPLETED
 
 * [x] React frontend
 * [x] TypeScript
@@ -693,7 +723,9 @@ python test_profiler.py
 * [x] PostgreSQL foundation
 * [x] AI insights foundation
 
-### 🟡 In Progress
+---
+
+## 🟡 IN PROGRESS
 
 * [ ] Advanced AI data interaction
 * [ ] Better insight generation
@@ -701,10 +733,12 @@ python test_profiler.py
 * [ ] Improved dashboard experience
 * [ ] Production hardening
 
-### 🔵 Next
+---
+
+## 🔵 NEXT
 
 * [ ] Advanced Anime.js motion system
-* [ ] Three.js data/AI visual layer
+* [ ] Three.js data / AI visual layer
 * [ ] Advanced report generation
 * [ ] Improved ML automation
 * [ ] Performance optimization
@@ -730,10 +764,21 @@ Use:
 ```text
 Environment Variables
         ↓
-Backend
+     Backend
         ↓
-AI / Database
+ ┌──────┴──────┐
+ ↓             ↓
+AI          Database
 ```
+
+### Security principles
+
+* 🔒 Keep secrets in environment variables
+* 🚫 Never commit `.env`
+* 🔑 Rotate exposed API keys
+* 🛡️ Validate uploaded files
+* 🧹 Sanitize user inputs
+* 📦 Keep dependencies updated
 
 ---
 
@@ -757,13 +802,63 @@ Want to improve DataPilot?
 🔀 Pull Request
 ```
 
+### Contribution flow
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test the changes
+5. Commit your work
+6. Push the branch
+7. Open a Pull Request
+
 Ideas, improvements and bug reports are welcome.
+
+---
+
+# 🧭 PRODUCT PHILOSOPHY
+
+DataPilot is built around four principles:
+
+```text
+              ┌───────────────┐
+              │      DATA     │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │   CLARITY     │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │ INTELLIGENCE  │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │    ACTION     │
+              └───────────────┘
+```
+
+### Data
+
+Understand what exists.
+
+### Clarity
+
+Make complex datasets understandable.
+
+### Intelligence
+
+Use analytics, ML and AI to uncover patterns.
+
+### Action
+
+Turn insights into meaningful decisions.
 
 ---
 
 # 🌟 THE VISION
 
-DataPilot is being built around a larger idea:
+DataPilot is being built around a larger question:
 
 > ### What if interacting with data felt as natural as talking to an expert?
 
@@ -771,53 +866,67 @@ Instead of asking users to understand every analytical operation first, DataPilo
 
 ```text
 "I want to understand my dataset."
-             ↓
+                ↓
 "What's unusual here?"
-             ↓
+                ↓
 "Why is this happening?"
-             ↓
+                ↓
 "What should I investigate?"
-             ↓
+                ↓
 "What model should I try?"
-             ↓
+                ↓
 "What does the result mean?"
 ```
 
-The system should help turn those questions into **analysis, insights and decisions**.
+The goal is to transform those questions into:
+
+```text
+             QUESTIONS
+                 ↓
+              ANALYSIS
+                 ↓
+              INSIGHTS
+                 ↓
+             EXPLANATION
+                 ↓
+              DECISIONS
+```
+
+---
+
+# 🚀 DATAPILOT IN ONE SENTENCE
+
+<div align="center">
+
+### **DataPilot turns raw datasets into understandable, AI-assisted intelligence.**
+
+</div>
 
 ---
 
 # 👨‍💻 BUILT BY
 
-<p align="center">
+<div align="center">
 
-<img src="https://github.com/dhanush080607.png?size=120" width="120" style="border-radius:50%"/>
+## Dhanush
 
-<br/>
+**CSE — Data Science**
 
-### Dhanush
-
-<strong>CSE — Data Science</strong>
+`AI` • `Data Science` • `Machine Learning` • `Full-Stack Development`
 
 <br/>
-
-AI • Data Science • Machine Learning • Full-Stack Development
-
-<br/><br/>
 
 <a href="https://github.com/dhanush080607">
-<img src="https://img.shields.io/badge/GitHub-dhanush080607-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/GitHub-Dhanush-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-</p>
+</div>
 
 ---
 
 # ⭐ SUPPORT DATAPILOT
 
 If you like the project:
-
-<p align="center">
 
 ⭐ **Star the repository**
 
@@ -827,28 +936,18 @@ If you like the project:
 
 🤝 **Contribute**
 
-</p>
+🚀 **Help build the future of AI-powered data analysis**
 
 ---
 
-<p align="center">
+<div align="center">
 
-<img
-src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:00D9FF,50:0A1A2F,100:050505&section=footer&animation=fadeIn"
-/>
+### ⚡ DATAPILOT
 
-</p>
-
-<p align="center">
-
-<strong>⚡ DataPilot</strong>
+**Explore. Ask. Analyze. Understand.**
 
 <br/>
 
-<em>Explore. Ask. Analyze. Understand.</em>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,45:3B82F6,75:EC4899,100:22D3EE&height=130&section=footer&animation=fadeIn"/>
 
-<br/><br/>
-
-<sub>Built with Python • React • AI • Data</sub>
-
-</p>
+</div>
