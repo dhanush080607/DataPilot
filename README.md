@@ -906,6 +906,11 @@ The goal is to transform those questions into:
 
 # 👨‍💻 BUILT BY
 
+<p align="center">
+
+<img src="https://github.com/dhanush080607.png?size=120" width="120" style="border-radius:50%"/>
+
+<br/>
 <div align="center">
 
 ## Dhanush
